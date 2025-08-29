@@ -1,15 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Exploring this gift called life and documenting it 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am Abhiram ,a final year student at BITS Goa.I am currently doing my thesis in TU Dresden where I am studying different characteristics of phage resistant bacteria.I am pursuing Integrated Masters in Biological Sciences in BITS Goa (India).I also do have an a dual degree BE in Chemical Engineering.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My interests 
+-Biology 
+-Cricket 
+-Carnatic music
+-Travel 
 
-What else do you need?
+I aim to use this website to write my opinions on these topics.
 
 ### My story
 
