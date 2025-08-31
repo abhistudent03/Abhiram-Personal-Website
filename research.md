@@ -4,9 +4,11 @@
     <p>Describe your ongoing work here...</p>
     Current - Masters thesis in TU Dresden 
     -Working on T4 phage resistant E coli bacteria and studying the different characterstics of these bacteria 
-    Aims of the project: 1) Understand antibiotic resistance capability of phage resistant bacteria 
-                         2) Understand the lethality of these phage resistant bacteria (check whether they can kill larva)
-                         3) Find out the genetic similarilty and physiological similarity of the phage resistant bacteria 
+     <div>
+       <p>•Understand antibiotic resistance capability of phage resistant bacteria </p>
+       <p>• Understand the lethality of these phage resistant bacteria (check whether they can kill larva)</p>
+       <p>• Find out the genetic similarilty and physiological similarity of the phage resistant bacteria </p>
+      </div> 
     
   </div>
   <div class="card">
