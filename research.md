@@ -1,8 +1,7 @@
 <div class="cards">
   <div class="card">
-    <h2>Current Research</h2>
-    <p>Describe your ongoing work here...</p>
-   <strong> Current - Masters thesis in TU Dresden </strong> <br>
+    <h2>Current Research</h2><br>
+     <strong> Current - Masters thesis in TU Dresden </strong> <br>
     Working on T4 phage resistant E coli bacteria and studying the different characterstics of these bacteria <br>
      <div>
        <p>•Understand antibiotic resistance capability of phage resistant bacteria </p>
