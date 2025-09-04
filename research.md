@@ -16,7 +16,9 @@
     <div style="background-color: #FFF4D6; padding: 25px; border-radius: 10px; border: 2px solid #F5E6B8; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <h2>What got me hooked to antbiotic resistance and its allied topics ? <br>
     <ul>
-      <li><a href="[link-to-paper1](https://doi.org/10.3390/antibiotics10070821)">Paper 1</a> In *Staphylococcus aureus*, the ArlRS and VraSR two-component systems, with VraSR being the dominant one, are crucial for protecting the bacteria against the antibiotic ceftaroline, suggesting that targeting these systems could be a new way to overcome drug resistance.</li>
+      <li><a href="[link-to-paper1]">Paper 1</a> <p> In *Staphylococcus aureus*, the ArlRS and VraSR two-component systems, with VraSR being the dominant one, are crucial for protecting the bacteria against the antibiotic ceftaroline, suggesting that targeting these systems could be a new way to overcome drug resistance <p>
+        <p> Link of paper -https://www.mdpi.com/2079-6382/10/7/821   <p>
+        .</li>
       <li><a href="link-to-paper2">Paper 2</a> – short note</li>
     </ul>
       </div>
