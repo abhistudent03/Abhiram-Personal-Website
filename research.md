@@ -13,11 +13,13 @@
     </div>
   </div>
   <div class="card">
-    <h2>What got me hooked to antbiotic resistance and its allied topics ? 
+    <div style="background-color: #FFF4D6; padding: 25px; border-radius: 10px; border: 2px solid #F5E6B8; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h2>What got me hooked to antbiotic resistance and its allied topics ? <br>
     <ul>
-      <li><a href="[link-to-paper1](https://doi.org/10.3390/antibiotics10070821)">Paper 1</a> –In Staphylococcus aureus, there are 15 two-component systems, and the study identified ArlRS and VraSR as especially important in protecting the bacteria against ceftaroline. VraSR appears to play the dominant role, since the reintroduction of this single system was enough to restore resistance. These findings point to a potential new therapeutic approach: by targeting these systems, particularly VraSR, it may be possible to enhance the effectiveness of ceftaroline and other antibiotics against drug-resistant S. aureus.</li>
+      <li><a href="[link-to-paper1](https://doi.org/10.3390/antibiotics10070821)">Paper 1</a> In *Staphylococcus aureus*, the ArlRS and VraSR two-component systems, with VraSR being the dominant one, are crucial for protecting the bacteria against the antibiotic ceftaroline, suggesting that targeting these systems could be a new way to overcome drug resistance.</li>
       <li><a href="link-to-paper2">Paper 2</a> – short note</li>
     </ul>
+      </div>
   </div>
   <div class="card">
     <h2>Interesting Papers (Biology)</h2>
