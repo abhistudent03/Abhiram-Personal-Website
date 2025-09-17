@@ -10,11 +10,8 @@
         <p>• Find out the genetic similarity and physiological similarity of the phage resistant bacteria</p>
       </div> 
       
-      <h3>Related Publications:</h3>
-      <p>📄 <a href="https://your-thesis-paper-link.com" target="_blank">Masters Thesis Draft</a> - <em>In Progress</em></p>
-      <p>💻 <a href="https://github.com/yourusername/thesis-code" target="_blank">Research Code Repository</a></p>
-      <p>📊 <a href="https://your-data-link.com" target="_blank">Experimental Data</a></p>
-    </div>
+      
+  
   </div>
 
   <div class="card">
