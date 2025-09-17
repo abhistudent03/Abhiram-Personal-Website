@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/biology-pic.png"
+avatar: "https://abhistudent03.github.io/assets/img/biology-pic.png"
 
 
 
