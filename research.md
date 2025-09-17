@@ -26,15 +26,19 @@
       </div>
 
       <div style="margin-bottom: 20px;">
-        <h4>📄 <a href="https://your-paper2-link.com" target="_blank" style="color: #2c5aa0; text-decoration: none;">Phage Resistance Mechanisms in E. coli</a></h4>
+        <h4>📄 <a href="https://www.biorxiv.org/content/10.1101/2023.02.03.526509v1.abstract" style="color: #2c5aa0; text-decoration: none;">Profiling of the Cell Wall Stress Response in Bacillus subtilis</a></h4>
         <p style="margin: 10px 0; font-style: italic;">Journal Name, Year</p>
-        <p>Brief description of how this paper relates to your research on T4 phage resistant E. coli bacteria.</p>
+         <p>The cell wall of the bacterium *Bacillus subtilis* is a vital protective barrier, and this study comprehensively analyzed how the bacterium responds to stress from antibiotics that target it.</p>
+         <p>The research revealed that the response is complex and involves specific regulatory proteins, like ECF sigma factors and two-component systems, which protect the cell and help maintain the cell wall's integrity.</p>
+        <p>.</p>
       </div>
 
       <div style="margin-bottom: 20px;">
-        <h4>📄 <a href="https://your-paper3-link.com" target="_blank" style="color: #2c5aa0; text-decoration: none;">Antibiotic Resistance in Phage-Resistant Bacteria</a></h4>
+        <h4>📄 <a href="https://www.nature.com/articles/s41586-018-0278-9" style="color: #2c5aa0; text-decoration: none;"> Gram Negative Species-specific activity of antibacterial drug combinations</a></h4>
         <p style="margin: 10px 0; font-style: italic;">Journal Name, Year</p>
-        <p>Research on the correlation between phage resistance and antibiotic resistance mechanisms.</p>
+        <p>A groundbreaking study on almost 3,000 drug combinations, including antibiotics and common food additives, reveals that most interactions are species-specific, challenging the idea of broad-spectrum treatments. .</p>
+         <p> Researchers found that while antagonisms between drugs are common, synergies are more conserved and effective, with one combination even reversing resistance to the last-resort antibiotic, colistin..</p>
+        
       </div>
     </div>
   </div>
