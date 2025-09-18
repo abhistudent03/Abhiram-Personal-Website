@@ -1,0 +1,158 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if we're on the home page
+    const isHomePage = window.location.pathname === '/' || 
+                      window.location.pathname === '/index.html' ||
+                      window.location.pathname.endsWith('/');
+    
+    // Only create bacteria background on home page
+    if (isHomePage) {
+        setTimeout(() => {
+            new BacteriaBackground();
+        }, 500);
+    }
+});
+
+class BacteriaBackground {
+    constructor() {
+        this.bacteria = [];
+        this.init();
+        this.bindEvents();
+    }
+
+    init() {
+        // Create the background container
+        this.createBackground();
+        
+        // Create multiple bacteria
+        for (let i = 0; i < 25; i++) {
+            this.createBacteria();
+        }
+    }
+
+    createBackground() {
+        // Check if background already exists
+        if (document.getElementById('bacteriaBackground')) {
+            return;
+        }
+
+        const background = document.createElement('div');
+        background.id = 'bacteriaBackground';
+        background.className = 'bacteria-background';
+        document.body.insertBefore(background, document.body.firstChild);
+        this.background = background;
+    }
+
+    createBacteria() {
+        const bacteria = document.createElement('div');
+        bacteria.classList.add('bacteria');
+        
+        // Random bacteria type
+        const type = Math.floor(Math.random() * 6) + 1;
+        bacteria.classList.add(`bacteria-type-${type}`);
+        
+        // Random position
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        bacteria.style.left = x + 'px';
+        bacteria.style.top = y + 'px';
+        
+        // Random rotation for flagella
+        bacteria.style.setProperty('--rotation', Math.random() * 360 + 'deg');
+        
+        // Random animation delay
+        bacteria.style.animationDelay = Math.random() * 6 + 's';
+        
+        // Random z-index for depth
+        bacteria.style.zIndex = Math.floor(Math.random() * 5) - 2;
+        
+        this.background.appendChild(bacteria);
+        this.bacteria.push({
+            element: bacteria,
+            originalX: x,
+            originalY: y,
+            highlighted: false
+        });
+    }
+
+    highlightRandomBacteria() {
+        // Remove previous highlights
+        this.bacteria.forEach(b => {
+            b.element.classList.remove('highlighted');
+            b.highlighted = false;
+        });
+        
+        // Highlight 2-3 random bacteria
+        const numToHighlight = Math.floor(Math.random() * 2) + 2;
+        const shuffled = [...this.bacteria].sort(() => 0.5 - Math.random());
+        
+        for (let i = 0; i < numToHighlight && i < shuffled.length; i++) {
+            shuffled[i].element.classList.add('highlighted');
+            shuffled[i].highlighted = true;
+        }
+    }
+
+    moveBacteria(scrollPercent) {
+        this.bacteria.forEach((bacteria, index) => {
+            const element = bacteria.element;
+            
+            // Parallax effect based on z-index
+            const depth = parseInt(element.style.zIndex) || 0;
+            const parallaxFactor = 0.5 + (depth * 0.1);
+            
+            // Move bacteria based on scroll
+            const newY = bacteria.originalY + (scrollPercent * 200 * parallaxFactor);
+            const newX = bacteria.originalX + Math.sin(scrollPercent * Math.PI * 2 + index) * 30;
+            
+            element.style.transform = `translate(${newX - bacteria.originalX}px, ${newY - bacteria.originalY}px) rotate(${scrollPercent * 360}deg)`;
+            
+            // Add rotation to flagella based on scroll
+            element.style.setProperty('--rotation', (scrollPercent * 360 + index * 60) + 'deg');
+        });
+    }
+
+    bindEvents() {
+        let lastScrollTime = 0;
+        let scrollTimeout;
+        
+        window.addEventListener('scroll', () => {
+            const now = Date.now();
+            const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            
+            // Move bacteria with parallax effect
+            this.moveBacteria(scrollPercent);
+            
+            // Highlight bacteria on scroll (throttled)
+            if (now - lastScrollTime > 1000) {
+                this.highlightRandomBacteria();
+                lastScrollTime = now;
+            }
+            
+            // Clear highlights after stopping scroll
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                this.bacteria.forEach(b => {
+                    b.element.classList.remove('highlighted');
+                });
+            }, 2000);
+        });
+
+        // Click to highlight bacteria
+        this.bacteria.forEach(bacteria => {
+            bacteria.element.addEventListener('click', () => {
+                bacteria.element.classList.toggle('highlighted');
+            });
+        });
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            this.bacteria.forEach(bacteria => {
+                const newX = Math.random() * window.innerWidth;
+                const newY = Math.random() * window.innerHeight;
+                bacteria.element.style.left = newX + 'px';
+                bacteria.element.style.top = newY + 'px';
+                bacteria.originalX = newX;
+                bacteria.originalY = newY;
+            });
+        });
+    }
+}
